@@ -1,0 +1,40 @@
+.lines {
+    @apply absolute top-0 left-0 right-0 h-full w-[90vw] m-auto;
+}
+.line {
+    @apply absolute w-px h-full top-0 left-1/2 bg-white bg-opacity-10 overflow-hidden;
+}
+.line:nth-child(1) {
+    margin-left: -25%;
+}
+.line:nth-child(3) {
+    margin-left: 25%;
+}
+@keyframes drop {
+    0% {
+        top: -50%;
+    }
+    100% {
+        top: 110%;
+    }
+}
+.line::after {
+    content: '';
+    @apply block absolute w-full;
+    height: 15vh;
+    top: -50%;
+    left: 0;
+    background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0) 0%,
+            #ffffff 75%,
+            #ffffff 100%
+    );
+    animation: drop 7s cubic-bezier(0.4, 0.26, 0, 0.97) infinite forwards;
+}
+.line:nth-child(1)::after {
+    animation-delay: 2s;
+}
+.line:nth-child(3)::after {
+    animation-delay: 2.5s;
+}
