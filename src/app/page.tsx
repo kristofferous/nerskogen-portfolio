@@ -29,8 +29,8 @@ export default function Home() {
                 <meta name="twitter:image" content="/image.jpg" />
             </Head>
 
-            <AnimatedLines />
             <main className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4">
+                <AnimatedLines />
                 <div className="w-32 h-32 sm:w-48 sm:h-48 mb-6 relative overflow-hidden rounded-full">
                     <Image
                         src="/image.jpg"
