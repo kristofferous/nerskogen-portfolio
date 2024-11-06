@@ -17,15 +17,15 @@ export default function Home() {
     return (
         <div className="relative overflow-hidden bg-[#171717]">
             <Head>
-                <meta property="og:title" content="Kristoffer Nerskogen | Portefølje" />
-                <meta property="og:description" content="Full-stack utviklerportefølje for Kristoffer Nerskogen." />
+                <meta property="og:title" content="Herman Kristoffer Nerskogen Helle | Portefølje" />
+                <meta property="og:description" content="Full-stack utviklerportefølje for Herman Kristoffer Nerskogen Helle." />
                 <meta property="og:image" content="/image.jpg" />
                 <meta property="og:url" content="https://nerskogen.com" />
                 <meta property="og:type" content="website" />
 
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Kristoffer Nerskogen | Portefølje" />
-                <meta name="twitter:description" content="Full-stack utviklerportefølje for Kristoffer Nerskogen." />
+                <meta name="twitter:title" content="Herman Kristoffer Nerskogen Helle | Portefølje" />
+                <meta name="twitter:description" content="Full-stack utviklerportefølje for Herman Kristoffer Nerskogen Helle." />
                 <meta name="twitter:image" content="/image.jpg" />
             </Head>
 
@@ -47,7 +47,7 @@ export default function Home() {
                     Velkommen til min portefølje
                 </h1>
                 <p className="text-lg sm:text-xl md:text-2xl text-white text-center max-w-2xl">
-                    Hei, jeg heter Kristoffer Nerskogen. Jeg er 17 år og en full-stack utvikler som er dyktig i
+                    Hei, jeg heter Herman Kristoffer Nerskogen Helle. Jeg er 17 år og en full-stack utvikler som er dyktig i
                     programmering. Jeg er stolt av å vise frem både min portefølje og tidligere prosjekter.
                 </p>
             </main>
