@@ -1,37 +1,24 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
+import type {Metadata} from "next";
 import "./globals.css";
 import Footer from "@/components/Footer";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import React from "react";
 
 export const metadata: Metadata = {
-    title: 'Kristoffer Nerskogen | Portefølje',
+    title: 'Herman Kristoffer Nerskogen Helle | Portefølje',
     description: 'Full-stack utviklerportefølje for Kristoffer Nerskogen.',
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
+                                       children,
+                                   }: Readonly<{
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    return (
+        <html lang="en">
+        <body className={`antialiased`}>
         {children}
-      <Footer/>
-      </body>
-    </html>
-  );
+        <Footer/>
+        </body>
+        </html>
+    );
 }
