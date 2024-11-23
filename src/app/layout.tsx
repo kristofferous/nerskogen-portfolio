@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import React from "react";
 import PlausibleScript from "@/components/analytics/PlausibleScript";
+import Script from "next/script";
 
 export const metadata: Metadata = {
     title: 'Herman Kristoffer Nerskogen Helle | Portefølje',
@@ -17,9 +18,15 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={`antialiased`}>
-        <PlausibleScript/>
         {children}
         <Footer/>
+        <Script
+            src="https://insights.isora.no/js/script.js"
+            strategy="afterInteractive"
+            data-domain="nerskogen.com"
+            defer
+        />
+
         </body>
         </html>
     );
