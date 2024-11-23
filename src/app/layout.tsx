@@ -2,7 +2,6 @@ import type {Metadata} from "next";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import React from "react";
-import PlausibleScript from "@/components/analytics/PlausibleScript";
 import Script from "next/script";
 
 export const metadata: Metadata = {
