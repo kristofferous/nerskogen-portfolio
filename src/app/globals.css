@@ -1,16 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --text-on-accent: #0E0E0E; /* Black text on accent elements */
+  --color-primary-bg: #171717;
+  --color-secondary-bg: #1f1f1f;
+  --color-primary-text: #ffffff;
+  --color-secondary-text: #e5e5e5;
+  --color-accent: #1E90FF; /* Eksempel på accent-farge */
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-primary-text);
+  background: var(--color-primary-bg);
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {

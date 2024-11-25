@@ -24,9 +24,16 @@ const config: Config = {
                     },
                 },
             },
+            fontFamily: {
+                sans: ['Montserrat', 'Arial', 'Helvetica', 'sans-serif'],
+                serif: ['Playfair Display', 'serif'],
+            },
             colors: {
-                background: "var(--background)",
-                foreground: "var(--foreground)",
+                'primary-bg': 'var(--color-primary-bg)',
+                'secondary-bg': 'var(--color-secondary-bg)',
+                'primary-text': 'var(--color-primary-text)',
+                'secondary-text': 'var(--color-secondary-text)',
+                'accent': 'var(--color-accent)',
             },
         },
     },

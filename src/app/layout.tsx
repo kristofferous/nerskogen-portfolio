@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import React from "react";
 import Script from "next/script";
+import NavbarLayout from "@/components/common/Navbar";
 
 export const metadata: Metadata = {
     title: 'Herman Kristoffer Nerskogen Helle | Portefølje',
@@ -17,8 +18,10 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={`antialiased`}>
-        {children}
-        <Footer/>
+        <NavbarLayout>
+            {children}
+            <Footer/>
+        </NavbarLayout>
         <Script
             src="https://insights.isora.no/js/script.js"
             strategy="afterInteractive"
